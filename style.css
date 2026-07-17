@@ -3,17 +3,14 @@
 
 *{
     margin: 0;
-    font-family: Roboto
+    font-family: Roboto;
+
 }
-
-
-
-
 
 body{
     display: grid;
     grid-template-columns: 50% 1fr;
-    height: 100Vh;
+    min-height: 100dVh;
 }
 
 .login{
@@ -45,8 +42,8 @@ img{
 
 .login-form{
     background-color: #24221f;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,26 +150,43 @@ button{
 }
 
 
-@media(max-width: 756px){
+@media(max-width: 1023px){
+
+    html{
+        background-color: #191816;
+    }
+
     body{
         grid-template-columns: 1fr;
     }
 
-    img{
+
+    .bg-picture{
         display: none;
     }
 
-    .login{
-        background-color:#191816;
+    .head-logo{
+        left: 20px
     }
 
     .login-form{
-        width: 0;
-        height: 0;
+        background-color: #191816;
+        width: 90%;
+        height: auto;
+    }
+    
+    .login{
+        min-height: 100dvh;
+        padding: 40px 0;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
-  .input-area{
-    display: column;
-  }
+    .main-area{
+        height: auto;
+    }
 
+    .login-form{
+        margin-top: 70px;
+    }
 }
