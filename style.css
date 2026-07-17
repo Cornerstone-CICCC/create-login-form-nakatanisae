@@ -10,7 +10,10 @@ body{
 
 .login{
     grid-column: 1;
-    background-color: lightblue;
+    background-color:#191816;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bg-picture{
@@ -22,4 +25,75 @@ img{
     height: 100Vh;
     width: 100%;
     object-fit: cover;
+}
+
+.login-form{
+    background-color: #24221f;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-area{
+    width: 400px;
+    height: 400px;
+    gap: 10px;
+}
+
+.input-area{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.logo{
+    width: 20px;
+    height: 20px;
+}
+
+span{
+    color: #d4ccb6
+}
+
+p, label{
+    color: #afb6c2;
+}
+
+input[type=email],input[type=password], button{
+    width: 100%;
+    height: 30px; 
+    border-radius: 4px;
+}
+
+.login-top p{
+    margin-top: 5px;
+}
+
+.remindMe{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media(max-width: 756px){
+    body{
+        grid-template-columns: 1fr;
+    }
+
+    img{
+        display: none;
+    }
+
+    .login{
+        background-color:#191816;
+    }
+
+    .login-form{
+        width: 0;
+        height: 0;
+    }
 }
