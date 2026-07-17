@@ -95,6 +95,10 @@ p, label{
     color: #afb6c2;
 }
 
+a{
+    color:#ffc632;
+    text-decoration: none;
+}
 
 input[type=email],input[type=password], button{
     width: 100%;
@@ -107,15 +111,15 @@ input[type=email],input[type=password]{
     background-color: #24221f;
     margin-top: 3px;
     padding-left: 35px;
-}
-
-input[type=email]{
-    border: #ffc632 solid 2px;
-}
-
-input[type=password]{
     border:  rgb(49,48,46)solid 2px;
+    color: #afb6c2;
 }
+
+input[type=email]:focus,input[type=password]:focus{
+    border-color: #ffc632;
+    outline: none;
+}
+
 
 .accent-color{
     accent-color: #ffc632;
@@ -141,12 +145,20 @@ button{
     font-size: large;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .change-color{
     color: #ffc632;
 }
 
 .text-center{
     text-align: center;
+}
+
+.resetPass:hover{
+    color:#afb6c2;
 }
 
 
