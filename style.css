@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    height: 100Vh;
+}
+
+.login{
+    grid-column: 1;
+    background-color: lightblue;
+}
+
+.bg-picture{
+    grid-column: 2;
+    
+}
+
+img{
+    height: 100Vh;
+    width: 100%;
+    object-fit: cover;
+}
